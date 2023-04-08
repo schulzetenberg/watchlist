@@ -105,7 +105,11 @@ async function checkStreamingAvailability(title, type) {
       });
 
 			results.image = item.poster ? `https://images.justwatch.com${item.poster.replace('{profile}', 's592')}` : '';
-			results.url = `https://www.justwatch.com/us/${type}/${item.title.replace(/[^a-z0-9]+/gi, '-').toLowerCase()}`;
+
+			const urlType = type === 'movie' ? 'movie' : 'tv-show';
+			const titleNoApostraphe = title.replace(/[']/g, '');
+			const titleCleaned = titleNoApostraphe.replace(/[^a-z0-9]+/gi, '-').toLowerCase();
+			results.url = `https://www.justwatch.com/us/${urlType}/${titleCleaned}`;
     }
     return results;
   }, { providers: new Set(), image: null, url: null });
