@@ -12,5 +12,6 @@ The data will be saved to watchlistData.json
 
 ### Run Frontend
 - $ cd frontend 
+- $ npm i
 - $ npm run start 
 - Navigate to http://localhost:3000/ 
