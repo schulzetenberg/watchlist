@@ -7,3 +7,10 @@ Find movies and shows from your Trakt.tv watchlist available on Netflix and Prim
 
 ## Run
 - $ npm run start
+
+The data will be saved to watchlistData.json
+
+### Run Frontend
+- $ cd frontend 
+- $ npm run start 
+- Navigate to http://localhost:3000/ 
