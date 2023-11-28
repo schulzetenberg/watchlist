@@ -1,3 +1,5 @@
+WARNING: Currently not working because of API [changes](https://github.com/dawoudt/JustWatchAPI/issues/66)
+
 # watchlist
 Find movies and shows from your Trakt.tv watchlist available on Netflix and Prime Video
 
